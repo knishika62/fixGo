@@ -109,14 +109,14 @@ Moonshot AI（OpenCode Go の裏側）は `thinking` 有効時に、**`tool_call
 OPENCODE_GO_API_KEY="your-api-key"
 MODEL="open_code_go/kimi-k2.6"
 
-# LM Studio 設定（sonnet / haiku 用）
+# LM Studio 設定（haiku 用）
 LM_STUDIO_BASE_URL="http://192.168.11.100:8888/v1"
-MODEL_SONNET="lmstudio/sakamakismile/Huihui-Qwen3.6-27B-abliterated-NVFP4-MTP"
+MODEL_SONNET=
 MODEL_HAIKU="lmstudio/sakamakismile/Huihui-Qwen3.6-27B-abliterated-NVFP4-MTP"
 MODEL_OPUS="open_code_go/kimi-k2.6"  # 将来強いモデルが出たら書き換え
 ```
 
-Claude Code の `/model` で sonnet を選ぶと Qwen、それ以外は kimi-k2.6 が使われます。
+Claude Code の `/model` で haiku を選ぶと Qwen、sonnet / opus / その他は kimi-k2.6 が使われます。
 
 ---
 
